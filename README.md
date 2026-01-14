@@ -54,7 +54,7 @@ This screenshot shows the groups provisioned by Terraform, including:
 - DevOps
 - Security
 - 
-![Screenshot](images/screenshot.png)(proof_of_creation/okta_groups.png)
+![Screenshot](proof_of_creation/okta_groups.png)
 ---
 ### Group Memberships Assigned
 Each user defined in `var.okta_users` was automatically assigned to the groups listed in their `groups` array using the `okta_group_memberships` resource.
