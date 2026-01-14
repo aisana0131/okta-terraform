@@ -44,3 +44,23 @@
 | Name | Description |
 |------|-------------|
 | <a name="output_users_by_group"></a> [users\_by\_group](#output\_users\_by\_group) | n/a |
+
+## Visual Proof of Resource Creation
+The following screenshots were taken directly from the Okta Admin Console after applying this Terraform configuration. They confirm successful provisioning of users, groups, and group-to-app assignments.
+### Okta Groups Created
+This screenshot shows the groups provisioned by Terraform, including:
+- 
+- Finance
+- DevOps
+- Security
+- 
+![Screenshot](images/screenshot.png)(proof_of_creation/okta_groups.png)
+---
+### Group Memberships Assigned
+Each user defined in `var.okta_users` was automatically assigned to the groups listed in their `groups` array using the `okta_group_memberships` resource.
+![Screenshot](proof_of_creation/okta_users.png)
+---
+### AWS Identity Center App Assignment
+Groups were assigned to the AWS IAM Identity Center Okta application using the `okta_app_group_assignments`.
+![Screenshot](proof_of_creation/okta_aws_app_groups.png)
+---
