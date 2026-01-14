@@ -1,3 +1,5 @@
+This repository contains Terraform configurations for managing Okta identity resources, including users, groups, and group memberships. It also automates application assignments, with built‑in support for mapping Okta groups to the AWS Identity Center (AWS SSO) application. The goal is to provide a consistent, repeatable, and secure way to manage identity lifecycle and AWS access through infrastructure as code.
+
 ## Requirements
 
 | Name | Version |
